@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="vbox" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.paperunicorn.ammolite.MenuController">
+   <BorderPane>
+      <center>
+          <MenuBar fx:id="menuBar">
+              <menus>
+                  <Menu text="File">
+                      <items>
+                          <MenuItem text="New" />
+                          <MenuItem text="Open" />
+                          <MenuItem text="Save" />
+                          <MenuItem text="Save As" />
+                          <SeparatorMenuItem />
+                          <MenuItem fx:id="exitMenuItem" onAction="#onExit" text="Exit" />
+                      </items>
+                  </Menu>
+                  <Menu text="Edit">
+                      <items>
+                          <MenuItem text="Copy" />
+                          <MenuItem text="Cut" />
+                          <MenuItem text="Paste" />
+                      </items>
+                  </Menu>
+                  <Menu text="Help">
+                      <items>
+                          <MenuItem disable="true" text="Search" />
+                          <MenuItem text="Online Manual" visible="false" />
+                          <SeparatorMenuItem />
+                          <MenuItem text="About" />
+                      </items>
+                  </Menu>
+              </menus>
+          </MenuBar>
+      </center>
+   </BorderPane>
+   <Pane prefHeight="842.0" prefWidth="700.0">
+      <children>
+         <ButtonBar buttonOrder="R_HE+U+FBIX_NCYOA_L" layoutY="630.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="700.0">
+           <buttons>
+             <Button mnemonicParsing="false" text="prev" />
+               <Button mnemonicParsing="false" text="next" />
+           </buttons>
+            <padding>
+               <Insets left="30.0" right="30.0" top="10.0" />
+            </padding>
+         </ButtonBar>
+         <ImageView fitHeight="611.0" fitWidth="670.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../../../../OneDrive/Pictures/1x/Final.png" />
+            </image>
+         </ImageView>
+         <TextField layoutX="14.0" layoutY="14.0" />
+      </children>
+   </Pane>
+</VBox>
