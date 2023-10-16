@@ -1,4 +1,4 @@
-package com.paperunicorn.ammolite;
+package com.paperunicorn.ammolite.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

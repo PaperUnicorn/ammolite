@@ -9,4 +9,6 @@ module com.paperunicorn.ammolite {
 
     opens com.paperunicorn.ammolite to javafx.fxml;
     exports com.paperunicorn.ammolite;
+    exports com.paperunicorn.ammolite.controller;
+    opens com.paperunicorn.ammolite.controller to javafx.fxml;
 }
