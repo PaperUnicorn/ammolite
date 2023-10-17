@@ -15,6 +15,7 @@ public class SceneController implements MultiSceneApplication {
 
     private static SceneController INSTANCE;
     public void loadScene(ActionEvent actionEvent, String sceneName) throws IOException {
+        System.out.println("loading scene "+sceneName);
         Parent root = FXMLLoader.load(Objects.requireNonNull(AmmoliteApplication.class.getResource(sceneName+".fxml")));
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
